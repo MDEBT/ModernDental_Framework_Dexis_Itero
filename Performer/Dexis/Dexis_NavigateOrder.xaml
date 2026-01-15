@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Dexis_NavigateOrder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:d="clr-namespace:DScoreAuthActivity;assembly=Login_DScoreAuthActivity" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Dexis_NavigateOrder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_CaseName" Type="InArgument(x:String)" />
     <x:Property Name="in_dictScreenElements" Type="InArgument(scg:Dictionary(x:String, ui:UiElement))" />
@@ -144,7 +144,7 @@
       <AssemblyReference>Login_DScoreAuthActivity</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Dexis_NavigateOrder" sap:VirtualizedContainerService.HintSize="896,6748" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Dexis_NavigateOrder" sap:VirtualizedContainerService.HintSize="1472,6609" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Dexis" Name="Brand" />
       <Variable x:TypeArguments="ui:UiElement" Name="ScreenElement" />
@@ -157,16 +157,16 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="896,6724.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="902,6586" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Try>
-        <Sequence DisplayName="Sequence Dexis Nevigate Order" sap:VirtualizedContainerService.HintSize="859.2,6470.4" sap2010:WorkflowViewState.IdRef="Sequence_23">
+        <Sequence DisplayName="Sequence Dexis Nevigate Order" sap:VirtualizedContainerService.HintSize="864,6334" sap2010:WorkflowViewState.IdRef="Sequence_23">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="825.6,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="830,57" sap2010:WorkflowViewState.IdRef="CommentOut_5">
             <ui:CommentOut.Body>
               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_13">
                 <sap:WorkflowViewStateService.ViewState>
@@ -208,7 +208,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:CommentOut>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="825.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Trace" Message="[&quot;Start : Nevigate to Order &quot;+in_CaseName]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="830,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Trace" Message="[&quot;Start : Nevigate to Order &quot;+in_CaseName]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -216,7 +216,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <Assign DisplayName="Assign - Screen Element" sap:VirtualizedContainerService.HintSize="825.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+          <Assign DisplayName="Assign - Screen Element" sap:VirtualizedContainerService.HintSize="830,114" sap2010:WorkflowViewState.IdRef="Assign_2">
             <Assign.To>
               <OutArgument x:TypeArguments="ui:UiElement">[ScreenElement]</OutArgument>
             </Assign.To>
@@ -230,7 +230,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </Assign>
-          <Assign DisplayName="Assign - ExecutionID" sap:VirtualizedContainerService.HintSize="825.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+          <Assign DisplayName="Assign - ExecutionID" sap:VirtualizedContainerService.HintSize="830,114" sap2010:WorkflowViewState.IdRef="Assign_3">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[out_ExecutionID]</OutArgument>
             </Assign.To>
@@ -244,13 +244,13 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </Assign>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="825.6,5952" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[ScreenElement]" ScopeGuid="5f46fe2d-21dd-4515-80d9-9c5146542207" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="830,5816" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[ScreenElement]" ScopeGuid="5f46fe2d-21dd-4515-80d9-9c5146542207" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="792,5792" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="796,5656" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:Boolean" Name="bool_OrderFound" />
                   </Sequence.Variables>
@@ -259,14 +259,14 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="758.4,176" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Start Dexis_NavigateOrder&quot;]" />
-                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="OrderScreen(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="758.4,5554.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="[ScreenElement]" ScopeGuid="d878b544-6e28-41de-83ae-65a2404f217b" Version="V2">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="762,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Start Dexis_NavigateOrder&quot;]" />
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="OrderScreen(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="762,5419" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="[ScreenElement]" ScopeGuid="d878b544-6e28-41de-83ae-65a2404f217b" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="724.8,5392.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="728,5257" sap2010:WorkflowViewState.IdRef="Sequence_6">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="check" />
                           </Sequence.Variables>
@@ -275,7 +275,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NSetText DisplayName="Set Text Case search Box" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="691.2,195.2" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="5f46fe2d-21dd-4515-80d9-9c5146542207" Text="[in_CaseName]" Version="V4">
+                          <uix:NSetText DisplayName="Set Text Case search Box" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="694,194" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="5f46fe2d-21dd-4515-80d9-9c5146542207" Text="[in_CaseName]" Version="V4">
                             <uix:NSetText.Target>
                               <uix:TargetAnchorable BrowserURL="dentalconnect.dexis.com/main.php" CVScreenId="043e9c54-c219-4369-87a2-fc105c03df05" ContentHash="tIEiYCeyokylmdetP8QQ9A" DesignTimeRectangle="42, 241, 507, 40" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='searchText' tag='INPUT' type='search' /&gt;" Guid="4091c3c1-7d1c-40ae-ad60-dbae608ed05c" InformativeScreenshot="7e8115efc8e32ae9dabdf52e1e90fd58.png" Reference="asTqoD1sAk2-CQVBddQccA/V-OEM50QVUqfUkyVtUHiQQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DEXIS*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete" />
                             </uix:NSetText.Target>
@@ -295,7 +295,7 @@
                               </uix:VerifyExecutionOptions>
                             </uix:NClick.VerifyOptions>
                           </uix:NClick>
-                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="691.2,795.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="694,793" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                             <TryCatch.Try>
                               <ui:RetryScope DisplayName="Retry Scope - Check Element Exist" sap:VirtualizedContainerService.HintSize="457.6,532" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="5" RetryInterval="00:00:03">
                                 <ui:RetryScope.ActivityBody>
@@ -344,7 +344,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <If Condition="[bool_OrderFound]" DisplayName="If - Order Found" sap:VirtualizedContainerService.HintSize="691.2,4115.2" sap2010:WorkflowViewState.IdRef="If_2">
+                          <If Condition="[bool_OrderFound]" DisplayName="If - Order Found" sap:VirtualizedContainerService.HintSize="694,3982" sap2010:WorkflowViewState.IdRef="If_2">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -352,7 +352,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="657.6,3778.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="660,3645" sap2010:WorkflowViewState.IdRef="Sequence_3">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="si:FileInfo" Name="DownloadedFile" />
                                 </Sequence.Variables>
@@ -361,7 +361,7 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:LogMessage DisplayName="Log Message - Order Found" sap:VirtualizedContainerService.HintSize="624,176" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Dexis order found: &quot;+in_CaseName]">
+                                <ui:LogMessage DisplayName="Log Message - Order Found" sap:VirtualizedContainerService.HintSize="626,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Dexis order found: &quot;+in_CaseName]">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -369,9 +369,9 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:LogMessage>
-                                <If Condition="[in_Country = &quot;Sweden&quot;]" DisplayName="If - Country" sap:VirtualizedContainerService.HintSize="624,3542.4" sap2010:WorkflowViewState.IdRef="If_3">
+                                <If Condition="[in_Country = &quot;Sweden&quot;]" DisplayName="If - Country" sap:VirtualizedContainerService.HintSize="626,3410" sap2010:WorkflowViewState.IdRef="If_3">
                                   <If.Then>
-                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -380,7 +380,7 @@
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="590.4,3291.2" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="592,3160" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="x:String" Name="Email_Account" />
                                         <Variable x:TypeArguments="ui:DatabaseConnection" Name="DB_Connect" />
@@ -391,7 +391,7 @@
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NGetText DisplayName="Get Case_OrderDate" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="556.8,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="d878b544-6e28-41de-83ae-65a2404f217b" TextString="[Case_OrderDate]" Version="V5">
+                                      <uix:NGetText DisplayName="Get Case_OrderDate" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="d878b544-6e28-41de-83ae-65a2404f217b" TextString="[Case_OrderDate]" Version="V5">
                                         <uix:NGetText.Target>
                                           <uix:TargetAnchorable BrowserURL="dentalconnect.dexis.com/main.php" CVScreenId="9b22a3b4-af3f-47ec-bab4-2219fb2097cd" ContentHash="YacFA_t4mkes3826_FBMUg" DesignTimeRectangle="1392, 425, 505, 22" FullSelectorArgument="&lt;webctrl id='caseAcqDate' tag='TIME' /&gt;" Guid="0a274c39-d20b-4e94-ad2b-013e1e1e3cf8" ImageBase64="" InformativeScreenshot="7d45b2be45292b5dc20b0161d774cb31.png" Reference="KS1pCQkBfUiIxIHYYg9xKQ/wWNdPxEG4kG64p2W7-nwiA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DEXIS IS Connect v1.2' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete" />
                                         </uix:NGetText.Target>
@@ -413,7 +413,7 @@
                                           <InArgument x:TypeArguments="s:DateTime">[DateTime.ParseExact( io_Case_OrderDate, "yyyy-MM-dd HH:mm:ss.fffffff", System.Globalization.CultureInfo.InvariantCulture)]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <Sequence DisplayName="Sequence - Switch for Country" sap:VirtualizedContainerService.HintSize="556.8,372" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                      <Sequence DisplayName="Sequence - Switch for Country" sap:VirtualizedContainerService.HintSize="558,372" sap2010:WorkflowViewState.IdRef="Sequence_16">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -585,7 +585,7 @@
                                           </Sequence>
                                         </Switch>
                                       </Sequence>
-                                      <Sequence DisplayName="Sequence insert into DB" sap:VirtualizedContainerService.HintSize="556.8,2266.4" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                      <Sequence DisplayName="Sequence insert into DB" sap:VirtualizedContainerService.HintSize="558,2135" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="sd:DataTable" Name="runQueryCaseCount" />
                                         </Sequence.Variables>
@@ -595,20 +595,20 @@
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:DatabaseConnect DisplayName="Connect to Database Modbot" sap:VirtualizedContainerService.HintSize="523.2,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="Microsoft.Data.SqlClient" ConnectionString="[in_Config(&quot;Connection_String_MODBOT&quot;).ToString]" DatabaseConnection="[DB_Connect]" />
-                                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="523.2,588" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                                        <ui:DatabaseConnect DisplayName="Connect to Database Modbot" sap:VirtualizedContainerService.HintSize="524,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="Microsoft.Data.SqlClient" ConnectionString="[in_Config(&quot;Connection_String_MODBOT&quot;).ToString]" DatabaseConnection="[DB_Connect]" />
+                                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="524,374" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                                           <TryCatch.Try>
-                                            <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DataTable="[runQueryCaseCount]" DisplayName="Run Query" ExistingDbConnection="[DB_Connect]" sap:VirtualizedContainerService.HintSize="333.6,115.2" sap2010:WorkflowViewState.IdRef="ExecuteQuery_1" Sql="[&quot;SELECT Case_Name&#xA; FROM [&quot; + in_Config(&quot;ModbotDB&quot;).ToString + &quot;].[dbo].[R_Scans_CaseList] &#xA; WHERE Case_Name = '&quot; + in_CaseName + &quot;';&quot;]">
+                                            <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DataTable="[runQueryCaseCount]" DisplayName="Run Query" ExistingDbConnection="[DB_Connect]" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="ExecuteQuery_1" Sql="[&quot;SELECT Case_Name&#xA; FROM [&quot; + in_Config(&quot;ModbotDB&quot;).ToString + &quot;].[dbo].[R_Scans_CaseList] &#xA; WHERE Case_Name = '&quot; + in_CaseName + &quot;';&quot;]">
                                               <ui:ExecuteQuery.Parameters>
                                                 <scg:Dictionary x:TypeArguments="x:String, Argument" />
                                               </ui:ExecuteQuery.Parameters>
                                             </ui:ExecuteQuery>
                                           </TryCatch.Try>
                                           <TryCatch.Catches>
-                                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422.4,392" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_4">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
@@ -616,14 +616,14 @@
                                                 <ActivityAction.Argument>
                                                   <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                                 </ActivityAction.Argument>
-                                                <Sequence sap:VirtualizedContainerService.HintSize="416,320.8" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                                <Sequence sap:VirtualizedContainerService.HintSize="416,319" sap2010:WorkflowViewState.IdRef="Sequence_27">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                                                  <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DataTable="[runQueryCaseCount]" DisplayName="Run Query" ExistingDbConnection="[DB_Connect]" sap:VirtualizedContainerService.HintSize="382.4,138.4" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" Sql="[&quot;SELECT Case_Name&#xA; FROM [&quot; + in_Config(&quot;ModbotDB&quot;).ToString + &quot;].[dbo].[R_Scans_CaseList] &#xA; WHERE Case_Name = '&quot; + in_CaseName + &quot;';&quot;]">
+                                                  <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="382,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                                  <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DataTable="[runQueryCaseCount]" DisplayName="Run Query" ExistingDbConnection="[DB_Connect]" sap:VirtualizedContainerService.HintSize="382,137" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" Sql="[&quot;SELECT Case_Name&#xA; FROM [&quot; + in_Config(&quot;ModbotDB&quot;).ToString + &quot;].[dbo].[R_Scans_CaseList] &#xA; WHERE Case_Name = '&quot; + in_CaseName + &quot;';&quot;]">
                                                     <ui:ExecuteQuery.Parameters>
                                                       <scg:Dictionary x:TypeArguments="x:String, Argument" />
                                                     </ui:ExecuteQuery.Parameters>
@@ -633,9 +633,9 @@
                                             </Catch>
                                           </TryCatch.Catches>
                                         </TryCatch>
-                                        <If Condition="[runQueryCaseCount.RowCount = 0]" sap:VirtualizedContainerService.HintSize="523.2,1503.2" sap2010:WorkflowViewState.IdRef="If_4">
+                                        <If Condition="[runQueryCaseCount.RowCount = 0]" sap:VirtualizedContainerService.HintSize="524,1586" sap2010:WorkflowViewState.IdRef="If_4">
                                           <If.Then>
-                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="489.6,1252" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="490,1335" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                               <Sequence.Variables>
                                                 <Variable x:TypeArguments="x:String" Name="objectKey" />
                                               </Sequence.Variables>
@@ -644,8 +644,17 @@
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <d:DScoreGenerateKofaxObjectKeyActivity DisplayName="DScore – Generate Kofax ObjectKey" sap:VirtualizedContainerService.HintSize="456,112.8" sap2010:WorkflowViewState.IdRef="DScoreGenerateKofaxObjectKeyActivity_1" ObjectKey="[objectKey]" SourceString="[in_CaseName]" />
-                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="456,176" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn" Message="[&quot;Inserting query for : &quot;+ in_CaseName]" />
+                                              <ui:InvokeCode ContinueOnError="{x:Null}" Code="If String.IsNullOrWhiteSpace(in_SourceString) Then&#xA;    Throw New ArgumentException(&quot;SourceString cannot be empty.&quot;)&#xA;End If&#xA;&#xA;Dim bytes As Byte() = System.Text.Encoding.UTF8.GetBytes(in_SourceString)&#xA;&#xA;Using sha As System.Security.Cryptography.SHA1 = System.Security.Cryptography.SHA1.Create()&#xA;    Dim hash As Byte() = sha.ComputeHash(bytes)&#xA;&#xA;    Dim sb As New System.Text.StringBuilder()&#xA;    For Each b As Byte In hash&#xA;        sb.Append(b.ToString(&quot;x2&quot;))&#xA;    Next&#xA;&#xA;    out_ObjectKey = sb.ToString() ' 40 chars&#xA;End Using&#xA;" DisplayName="Invoke Code - Kofax ObjectKey" sap:VirtualizedContainerService.HintSize="456,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+                                                <ui:InvokeCode.Arguments>
+                                                  <InArgument x:TypeArguments="x:String" x:Key="in_SourceString">
+                                                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_CaseName" />
+                                                  </InArgument>
+                                                  <OutArgument x:TypeArguments="x:String" x:Key="out_ObjectKey">
+                                                    <VisualBasicReference x:TypeArguments="x:String" ExpressionText="objectKey" />
+                                                  </OutArgument>
+                                                </ui:InvokeCode.Arguments>
+                                              </ui:InvokeCode>
+                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="456,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn" Message="[&quot;Inserting query for : &quot;+ in_CaseName]" />
                                               <Sequence DisplayName="Sequence - DB" sap:VirtualizedContainerService.HintSize="456,324" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -654,7 +663,7 @@
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                                 <ui:DatabaseConnect DisplayName="Connect to Database Modbot" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_3" ProviderName="Microsoft.Data.SqlClient" ConnectionString="[in_Config(&quot;Connection_String_MODBOT&quot;).ToString]" DatabaseConnection="[DB_Connect]" />
-                                                <ui:DatabaseDisconnect DatabaseConnection="[DB_Connect]" DisplayName="Disconnect from Database" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1" />
+                                                <ui:DatabaseDisconnect DatabaseConnection="[DB_Connect]" DisplayName="Disconnect from Database" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1" />
                                                 <ui:DatabaseConnect DisplayName="Connect to Database Modbot" sap:VirtualizedContainerService.HintSize="416,83.2" sap2010:WorkflowViewState.IdRef="DatabaseConnect_4" ProviderName="Microsoft.Data.SqlClient" ConnectionString="[in_Config(&quot;Connection_String_MODBOT&quot;).ToString]" DatabaseConnection="[DB_Connect]" />
                                               </Sequence>
                                               <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="456,579.2" sap2010:WorkflowViewState.IdRef="TryCatch_3">
