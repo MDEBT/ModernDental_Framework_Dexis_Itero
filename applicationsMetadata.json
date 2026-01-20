@@ -1,0 +1,48 @@
+﻿{
+  "Version": "1.0",
+  "Metadata": [
+    {
+      "ApplicationType": "API",
+      "ExecutablePath": null,
+      "Url": {
+        "Value": "DentixURL",
+        "IsExpression": true
+      },
+      "Arguments": null,
+      "Version": null
+    },
+    {
+      "ApplicationType": "Chrome",
+      "ExecutablePath": {
+        "Value": "chrome.exe",
+        "IsExpression": false
+      },
+      "Url": {
+        "Value": "https://dentalconnect.dexis.com",
+        "IsExpression": false
+      },
+      "Arguments": null,
+      "Version": null
+    },
+    {
+      "ApplicationType": "WindowsApplication",
+      "ExecutablePath": null,
+      "Url": null,
+      "Arguments": null,
+      "Version": null
+    },
+    {
+      "ApplicationType": "Chrome",
+      "ExecutablePath": {
+        "Value": "chrome.exe",
+        "IsExpression": false
+      },
+      "Url": {
+        "Value": "https://bff.cloud.myitero.com",
+        "IsExpression": false
+      },
+      "Arguments": null,
+      "Version": null
+    }
+  ]
+}

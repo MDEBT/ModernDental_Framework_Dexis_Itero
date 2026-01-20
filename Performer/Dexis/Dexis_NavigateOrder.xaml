@@ -144,7 +144,7 @@
       <AssemblyReference>Login_DScoreAuthActivity</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Dexis_NavigateOrder" sap:VirtualizedContainerService.HintSize="1472,6609" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Dexis_NavigateOrder" sap:VirtualizedContainerService.HintSize="1472,6605" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Dexis" Name="Brand" />
       <Variable x:TypeArguments="ui:UiElement" Name="ScreenElement" />
@@ -157,9 +157,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="902,6586" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="902,6582" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Try>
-        <Sequence DisplayName="Sequence Dexis Nevigate Order" sap:VirtualizedContainerService.HintSize="864,6334" sap2010:WorkflowViewState.IdRef="Sequence_23">
+        <Sequence DisplayName="Sequence Dexis Nevigate Order" sap:VirtualizedContainerService.HintSize="864,6330" sap2010:WorkflowViewState.IdRef="Sequence_23">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -244,13 +244,13 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </Assign>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="830,5816" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[ScreenElement]" ScopeGuid="5f46fe2d-21dd-4515-80d9-9c5146542207" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="830,5812" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[ScreenElement]" ScopeGuid="5f46fe2d-21dd-4515-80d9-9c5146542207" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="796,5656" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="796,5652" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:Boolean" Name="bool_OrderFound" />
                   </Sequence.Variables>
@@ -260,13 +260,13 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="762,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Start Dexis_NavigateOrder&quot;]" />
-                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="OrderScreen(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="762,5419" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="[ScreenElement]" ScopeGuid="d878b544-6e28-41de-83ae-65a2404f217b" Version="V2">
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="OrderScreen(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="762,5415" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="[ScreenElement]" ScopeGuid="d878b544-6e28-41de-83ae-65a2404f217b" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="728,5257" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="728,5253" sap2010:WorkflowViewState.IdRef="Sequence_6">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="check" />
                           </Sequence.Variables>
@@ -280,7 +280,7 @@
                               <uix:TargetAnchorable BrowserURL="dentalconnect.dexis.com/main.php" CVScreenId="043e9c54-c219-4369-87a2-fc105c03df05" ContentHash="tIEiYCeyokylmdetP8QQ9A" DesignTimeRectangle="42, 241, 507, 40" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='searchText' tag='INPUT' type='search' /&gt;" Guid="4091c3c1-7d1c-40ae-ad60-dbae608ed05c" InformativeScreenshot="7e8115efc8e32ae9dabdf52e1e90fd58.png" Reference="asTqoD1sAk2-CQVBddQccA/V-OEM50QVUqfUkyVtUHiQQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DEXIS*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete" />
                             </uix:NSetText.Target>
                           </uix:NSetText>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CaseName" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="691.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d878b544-6e28-41de-83ae-65a2404f217b" Version="V4">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CaseName" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="694,225" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d878b544-6e28-41de-83ae-65a2404f217b" Version="V4">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="dentalconnect.dexis.com/main.php" CVScreenId="2cdfd639-fb39-42fb-94ec-dcf1950d2c0b" ContentHash="DMyzPdiHzEewWzfwJzBOOA" DesignTimeRectangle="43, 311, 505, 33" ElementType="ListItem" FullSelectorArgument="[&quot;&lt;webctrl tag='LI' visibleinnertext='&quot;+in_CaseName+&quot;' /&gt;&quot;]" Guid="1c929a7a-1952-427a-bb24-f325646e6b9f" InformativeScreenshot="116bcd8152589262e90d0bba96e55a48.png" Reference="asTqoD1sAk2-CQVBddQccA/VqtI5CtPG0CcCjnAAaUNZw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DEXIS*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                             </uix:NClick.Target>
@@ -295,18 +295,18 @@
                               </uix:VerifyExecutionOptions>
                             </uix:NClick.VerifyOptions>
                           </uix:NClick>
-                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="694,793" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="694,790" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                             <TryCatch.Try>
-                              <ui:RetryScope DisplayName="Retry Scope - Check Element Exist" sap:VirtualizedContainerService.HintSize="457.6,532" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="5" RetryInterval="00:00:03">
+                              <ui:RetryScope DisplayName="Retry Scope - Check Element Exist" sap:VirtualizedContainerService.HintSize="458,529" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="5" RetryInterval="00:00:03">
                                 <ui:RetryScope.ActivityBody>
                                   <ActivityAction>
-                                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,240.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,240" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'NGP-5098'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,180.8" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[bool_OrderFound]" ScopeIdentifier="d878b544-6e28-41de-83ae-65a2404f217b" Version="V5">
+                                      <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'NGP-5098'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[bool_OrderFound]" ScopeIdentifier="d878b544-6e28-41de-83ae-65a2404f217b" Version="V5">
                                         <uix:NCheckElement.Target>
                                           <uix:TargetAnchorable BrowserURL="dentalconnect.dexis.com/main.php" CVScreenId="13f0b54b-7d94-436f-b9b8-222eeff7874a" ContentHash="VhZCZgyYNkSOFb78BuM6Ag" DesignTimeRectangle="606, 182, 142, 73" ElementType="Text" FullSelectorArgument="[&quot;&lt;webctrl id='caseId' tag='H1' parentclass='detailMode' visibleinnertext='&quot;+in_CaseName+&quot;' /&gt;&quot;]" Guid="e4c4d5c1-5737-495a-8aa4-d9799b96f824" InformativeScreenshot="da207d37184c4a302674d688af84d0a6.png" Reference="KS1pCQkBfUiIxIHYYg9xKQ/ja2TdOe10Uqa_8AQounU_Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DEXIS*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
                                         </uix:NCheckElement.Target>
@@ -316,7 +316,7 @@
                                 </ui:RetryScope.ActivityBody>
                                 <ui:RetryScope.Condition>
                                   <ActivityFunc x:TypeArguments="x:Boolean">
-                                    <ui:CheckTrue ErrorMessage="{x:Null}" DisplayName="Check True" Expression="[bool_OrderFound = True]" sap:VirtualizedContainerService.HintSize="333.6,131.2" sap2010:WorkflowViewState.IdRef="CheckTrue_1" Result="[checkTrue]" />
+                                    <ui:CheckTrue ErrorMessage="{x:Null}" DisplayName="Check True" Expression="[bool_OrderFound = True]" sap:VirtualizedContainerService.HintSize="334,129" sap2010:WorkflowViewState.IdRef="CheckTrue_1" Result="[checkTrue]" />
                                   </ActivityFunc>
                                 </ui:RetryScope.Condition>
                                 <sap:WorkflowViewStateService.ViewState>
@@ -646,12 +646,8 @@
                                               </sap:WorkflowViewStateService.ViewState>
                                               <ui:InvokeCode ContinueOnError="{x:Null}" Code="If String.IsNullOrWhiteSpace(in_SourceString) Then&#xA;    Throw New ArgumentException(&quot;SourceString cannot be empty.&quot;)&#xA;End If&#xA;&#xA;Dim bytes As Byte() = System.Text.Encoding.UTF8.GetBytes(in_SourceString)&#xA;&#xA;Using sha As System.Security.Cryptography.SHA1 = System.Security.Cryptography.SHA1.Create()&#xA;    Dim hash As Byte() = sha.ComputeHash(bytes)&#xA;&#xA;    Dim sb As New System.Text.StringBuilder()&#xA;    For Each b As Byte In hash&#xA;        sb.Append(b.ToString(&quot;x2&quot;))&#xA;    Next&#xA;&#xA;    out_ObjectKey = sb.ToString() ' 40 chars&#xA;End Using&#xA;" DisplayName="Invoke Code - Kofax ObjectKey" sap:VirtualizedContainerService.HintSize="456,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
                                                 <ui:InvokeCode.Arguments>
-                                                  <InArgument x:TypeArguments="x:String" x:Key="in_SourceString">
-                                                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_CaseName" />
-                                                  </InArgument>
-                                                  <OutArgument x:TypeArguments="x:String" x:Key="out_ObjectKey">
-                                                    <VisualBasicReference x:TypeArguments="x:String" ExpressionText="objectKey" />
-                                                  </OutArgument>
+                                                  <InArgument x:TypeArguments="x:String" x:Key="in_SourceString">[in_CaseName]</InArgument>
+                                                  <OutArgument x:TypeArguments="x:String" x:Key="out_ObjectKey">[objectKey]</OutArgument>
                                                 </ui:InvokeCode.Arguments>
                                               </ui:InvokeCode>
                                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="456,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn" Message="[&quot;Inserting query for : &quot;+ in_CaseName]" />
@@ -744,7 +740,7 @@
                       </ActivityAction>
                     </uix:NApplicationCard.Body>
                     <uix:NApplicationCard.TargetApp>
-                      <uix:TargetApp Area="-9, -9, 1938, 1158" BrowserType="Chrome" ContentHash="Tj0MCeKr20OFjMMxQqcNfw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANhSURBVDhPY2BgYGBgadzKwG1XycAw85wo16qbatrrL3GxNK4XYppxyoZh0aUItpXXg6XW39LX2HSTU2XLXQbN6dtA2iBAWV6FgeH4fwbmhh3mTN376wUm7mhWXXZuAfvsCwcZ5l56x7Dk6le21Te/ymy6+0Jnx4PVZnse2rjtu8NovecexABh90QGQd9sXuaarfVc6RPNmGs2TxSafPi39OLzD1haN03lqp5bwt+4sFpu9v5lultuvbTY//iFw6En0dFHbzA6H3zIwCDqFMkg4honxlq2pp2lZmsbQ+eJz8KTDt2yWXawQp6BQUSNjUFMhZtFTkFSXFcjtyHGYuu1845Hnj1zO/bM2vX4cwYGGR0TBjVuBh6ulN5qho7DH1knn3qlu/z0bKfVR9QZGBgYFRQUmBUUFNgU5OWFZPm41PQLm2IcDzx46XHi+QrfY4/YGRQUFJg0OBgEuBK7ixkadv7gaN/arjNhpTzD//8M2slFIHkYZgIZIi8lqWe35sRKz5MvnvqceKoLkmBRFWCTYitcNpmh7fg7pqb9+gxtRxkOIMIZ2RA2KXYmOatpa+s8Tzz/4nPimR9YUEWER56tcNkMhvYTbxjbj2oxdJ5iUJSTxWYAswQDg5jV1DUVnieef/U5/iQIYoAQlzxn+rR6hvbj3xk6T/gzdJ5k4EnqxGqANAezuN3qo7M8Tzx/7XXwrjnYC8oSQtJC3unBjC2HXzB0nVrF0HOSi6H7JNwAeQkxBsOkSAYuBgYWg9J2C8d99+66H3u6x3nJHgF44CgoyBuyla6czdB96htD/5lqhilnORkmnWUQSKpjkJdVABuk3TBdxXLrtQ2Oh598dt55Lbzt/3+48zgUZSQVJSw9XZgbduxgmHD2O8O0C2sY5lwMZFhwUZdz8Xlj+VWX0nW33Tllse/Rd9utV9r0kvK5W5EMYFJQUORTkpZQk7DydGGrWTOLcfKpFwxzL/1gWHLtHdvqmx9kNt75qbPpxi3jxQeLNEMThUBpBCOAQIaAXKIgL28oHJQZyFUxt4a9c+NU7r7NE2TalmSrJBUbywjw80iwsTLpurqC9aEbwgTyDihMlMWFpFX4OeTBmJNFUpGBgV+OlYVdXlaGSVFTB6EZBpAMgRnEAk7CEAxig8TgamAAADddM9Q+nsjBAAAAAElFTkSuQmCC" InformativeScreenshot="45fd43fc74e2c254b49653b756c56dc2.jpg" Reference="KS1pCQkBfUiIxIHYYg9xKQ/yOzKPN3wX0WnwNFqAX_x3Q" Selector="&lt;html app='chrome.exe' title='dashboard · My iTero' /&gt;" Url="https://bff.cloud.myitero.com/labs/home?q=*" Version="V2" />
+                      <uix:TargetApp Area="-9, -9, 1938, 1158" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANhSURBVDhPY2BgYGBgadzKwG1XycAw85wo16qbatrrL3GxNK4XYppxyoZh0aUItpXXg6XW39LX2HSTU2XLXQbN6dtA2iBAWV6FgeH4fwbmhh3mTN376wUm7mhWXXZuAfvsCwcZ5l56x7Dk6le21Te/ymy6+0Jnx4PVZnse2rjtu8NovecexABh90QGQd9sXuaarfVc6RPNmGs2TxSafPi39OLzD1haN03lqp5bwt+4sFpu9v5lultuvbTY//iFw6En0dFHbzA6H3zIwCDqFMkg4honxlq2pp2lZmsbQ+eJz8KTDt2yWXawQp6BQUSNjUFMhZtFTkFSXFcjtyHGYuu1845Hnj1zO/bM2vX4cwYGGR0TBjVuBh6ulN5qho7DH1knn3qlu/z0bKfVR9QZGBgYFRQUmBUUFNgU5OWFZPm41PQLm2IcDzx46XHi+QrfY4/YGRQUFJg0OBgEuBK7ixkadv7gaN/arjNhpTzD//8M2slFIHkYZgIZIi8lqWe35sRKz5MvnvqceKoLkmBRFWCTYitcNpmh7fg7pqb9+gxtRxkOIMIZ2RA2KXYmOatpa+s8Tzz/4nPimR9YUEWER56tcNkMhvYTbxjbj2oxdJ5iUJSTxWYAswQDg5jV1DUVnieef/U5/iQIYoAQlzxn+rR6hvbj3xk6T/gzdJ5k4EnqxGqANAezuN3qo7M8Tzx/7XXwrjnYC8oSQtJC3unBjC2HXzB0nVrF0HOSi6H7JNwAeQkxBsOkSAYuBgYWg9J2C8d99+66H3u6x3nJHgF44CgoyBuyla6czdB96htD/5lqhilnORkmnWUQSKpjkJdVABuk3TBdxXLrtQ2Oh598dt55Lbzt/3+48zgUZSQVJSw9XZgbduxgmHD2O8O0C2sY5lwMZFhwUZdz8Xlj+VWX0nW33Tllse/Rd9utV9r0kvK5W5EMYFJQUORTkpZQk7DydGGrWTOLcfKpFwxzL/1gWHLtHdvqmx9kNt75qbPpxi3jxQeLNEMThUBpBCOAQIaAXKIgL28oHJQZyFUxt4a9c+NU7r7NE2TalmSrJBUbywjw80iwsTLpurqC9aEbwgTyDihMlMWFpFX4OeTBmJNFUpGBgV+OlYVdXlaGSVFTB6EZBpAMgRnEAk7CEAxig8TgamAAADddM9Q+nsjBAAAAAElFTkSuQmCC" InformativeScreenshot="45fd43fc74e2c254b49653b756c56dc2.jpg" Selector="&lt;html app='chrome.exe' title='dashboard · My iTero' /&gt;" Url="https://bff.cloud.myitero.com/labs/home?q=*" Version="V2" />
                     </uix:NApplicationCard.TargetApp>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
